@@ -9,6 +9,7 @@ import org.testng.annotations.*;
     @Test
     public void addToCartTest() {
         HomePage homePage = new HomePage(driver);
+        homePage.assertPageTitle();
         homePage.searchProduct("Macbook air m2");
         ProductPage productPage = homePage.clickFirstProduct().assertPageTitle();
         productPage.addToCart();
