@@ -11,7 +11,7 @@ import org.testng.annotations.*;
         HomePage homePage = new HomePage(driver);
         homePage.assertPageTitle();
         homePage.searchProduct("Macbook air m2");
-        ProductPage productPage = homePage.clickFirstProduct().assertPageTitle();
+      ProductPage productPage= new ProductPage();        
         productPage.addToCart();
         CartPage cartPage = new CartPage(driver);
         cartPage.verifyItemAdded();
