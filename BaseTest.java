@@ -6,11 +6,11 @@ import org.testng.annotations.*;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected String baseUrl = "https://www.flipkart.com/"; // Initialize URL here
+    protected String baseUrl = "https://www.flipkart.com/"; 
 
     @BeforeSuite
     public void setup() {
-        driver = new ChromeDriver(); // Replace with your preferred browser driver
+        driver = new ChromeDriver(); 
         driver.manage().window().maximize();
 		driver.get(baseUrl);
     }
