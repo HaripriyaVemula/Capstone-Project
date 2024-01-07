@@ -1,7 +1,7 @@
 import pytest
 from pages import HomePage, ProductPage, CartPage
 
-@pytest.mark.usefixtures("driver")  # Use the driver fixture
+@pytest.mark.usefixtures("driver")  
 class TestFlipkart:
     def test_add_to_cart(self, driver):
         home_page = HomePage(driver)
